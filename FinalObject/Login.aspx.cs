@@ -16,7 +16,7 @@ namespace FinalObject
 
         protected void B1_Click(object sender, EventArgs e)
         {
-            B1.Text="Hello"+T1.Text
+           
         }
 
         protected void T1_TextChanged(object sender, EventArgs e)
