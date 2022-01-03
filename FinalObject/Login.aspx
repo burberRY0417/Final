@@ -8,11 +8,20 @@
     <title>登入</title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" style="margin-left:10px;" >
+        <h1>登入</h1>
+        <h2>請輸入帳號密碼</h2>
         <div>
-            Your Name:<asp:TextBox ID="T1" runat="server" OnTextChanged="T1_TextChanged"></asp:TextBox>
+            <asp:Label runat="server" font-size="Medium">帳號 : </asp:Label><br /><br />
+            <asp:TextBox runat="server" type="text" id="account" Width="250px"></asp:TextBox><br />
+            <asp:Label runat="server" Font-Size="Small">輸入帳號 (請輸入Email)</asp:Label><br /><br />
         </div>
-        <asp:Button ID="B1" runat="server" Text="Button" OnClick="B1_Click" />
+        <div>
+            <asp:Label runat="server" font-size="Medium">密碼 : </asp:Label><br /><br />
+            <asp:TextBox runat="server" type="password" id="password" Width="250px"></asp:TextBox><br />
+            <asp:Label runat="server" Font-Size="Small">輸入密碼 (請注意大小寫)</asp:Label><br /><br /><br />
+        </div>
+        <asp:Button ID="login" runat="server" Text="登入" OnClick="B1_Click" />
     </form>
 </body>
 </html>
