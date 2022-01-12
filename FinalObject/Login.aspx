@@ -10,18 +10,27 @@
 <body>
     <form id="form1" runat="server" style="margin-left:10px;" >
         <h1>登入</h1>
+        <asp:Label ID="Label1" runat="server" Text="" style="color:red;font-size:xx-large"></asp:Label>
         <h2>請輸入帳號密碼</h2>
         <div>
             <asp:Label runat="server" font-size="Medium">帳號 : </asp:Label><br /><br />
             <asp:TextBox runat="server" type="text" id="account" Width="250px"></asp:TextBox><br />
-            <asp:Label runat="server" Font-Size="Small">輸入帳號 (請輸入Email)</asp:Label><br /><br />
+            <asp:Label runat="server" Font-Size="Small">輸入帳號 (請輸入Email : 12345678@mail.com)</asp:Label><br /><br />
         </div>
         <div>
             <asp:Label runat="server" font-size="Medium">密碼 : </asp:Label><br /><br />
             <asp:TextBox runat="server" type="password" id="password" Width="250px"></asp:TextBox><br />
-            <asp:Label runat="server" Font-Size="Small">輸入密碼 (請注意大小寫)</asp:Label><br /><br /><br />
+            <asp:Label runat="server" Font-Size="Small">輸入密碼 (請注意大小寫 : ABCDefgh)</asp:Label><br /><br /><br />
         </div>
-        <asp:Button ID="login" runat="server" Text="登入" OnClick="B1_Click" />
+        <asp:Button ID="login" runat="server" Text="登入" OnClick="B1_Click" postbackurl=""/>
+        
+        <br /><br />
+        
+        
     </form>
 </body>
 </html>
+<script>
+   
+
+</script>
